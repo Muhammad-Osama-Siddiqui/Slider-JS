@@ -1,0 +1,58 @@
+#main{position :relative;
+           display :flex;
+           justify-content: center;
+        }
+        #image1,#image2,#image3{
+            transition : 1s ease-in all;
+        }
+        #slides{display:flex;
+        flex-direction: row;
+            width:40rem;
+            height:30rem;
+            overflow : hidden;
+            align-items: center;
+            position : absolute ;
+            border: 8px double;
+        }
+        #slides img{
+width: 41rem;
+height: 30rem;
+        }
+      #main button{width: 50px;
+        height:50px; 
+        border:none;
+            border-radius: 50%;
+            background:#000;
+            opacity :.5;
+        }
+       #main button:hover{
+        opacity:1;
+        border: solid 2px white;
+       }       
+        span{position : absolute ;
+        top: 14rem;
+        }
+        .left{
+        left:20%;}
+        .right{ right:20%;}
+        i{font-size: 25px; color:#fff; text-align:center;}
+@media(max-width: 480px){
+    #slides{
+        width:20rem;
+        height:15rem;
+    }
+    #slides img{
+        width:21rem;
+        height:15rem;
+    }
+    span{
+        top: 6.5rem;
+    }
+    .left{
+        left:15%;}
+        .right{ right:15%;}
+       #main button{width: 30px;
+        height:30px; 
+        }
+        i{font-size: 15px;}
+}
